@@ -35,7 +35,7 @@ public class UserRegistrationMain {
                 validate.validateMobNumber(input);
                 break;
             case 5:
-                System.out.println("Enter the Password. Note: minimum 8 characters should be given");
+                System.out.println("Enter the Password. Note: minimum 1 UpperCase & minimum 8 characters should be given");
                 String password= scan.next();
                 validate.validatePassword(password);
                 break;
