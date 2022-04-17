@@ -2,32 +2,41 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserInformation {
-    private String firstName;
-    private String lastName;
-    private String email;
+    private String firstNamePattern;
+    private String lastNamePattern;
+    private String emailPattern;
+    private String mobNumPattern;
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstNamePattern() {
+        return firstNamePattern;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstNamePattern(String firstNamePattern) {
+        this.firstNamePattern = firstNamePattern;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastNamePattern() {
+        return lastNamePattern;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastNamePattern(String lastNamePattern) {
+        this.lastNamePattern = lastNamePattern;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailPattern() {
+        return emailPattern;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailPattern(String emailPattern) {
+        this.emailPattern = emailPattern;
+    }
+
+    public String getMobNumPattern() {
+        return mobNumPattern;
+    }
+
+    public void setMobNumPattern(String mobNumPattern) {
+        this.mobNumPattern = mobNumPattern;
     }
 
     public void validatingInput(String input, String checkPattern, String option){
@@ -39,4 +48,3 @@ public class UserInformation {
             System.out.println("Entered "+option+ " : " +input+" is invalid");
     }
 }
-

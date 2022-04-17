@@ -7,7 +7,8 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("1.To Validate the First name.");
         System.out.println("2.To Validate the Second Name.");
-        System.out.println("3.TO Validate Email id");
+        System.out.println("3.To Validate Email id");
+        System.out.println("4.To Validate Mobile Number");
         System.out.println("Enter the option number to perform the operation");
         int option = scan.nextInt();
         switch(option){
@@ -26,8 +27,14 @@ public class UserRegistrationMain {
                 String email = scan.next();
                 validate.validateEmail(email);
                 break;
+            case 4:
+                System.out.println("Enter the Mob no:. Eg:-91 8602552745");
+                scan.nextLine();
+                String input = scan.nextLine();
+                validate.validateMobNumber(input);
+                break;
             default:
-                System.out.println("Please Enter valid option to validate the patter");
+                System.out.println("Please Enter valid option to validate the pattern");
                 break;
         }
     }
