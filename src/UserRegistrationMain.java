@@ -9,6 +9,7 @@ public class UserRegistrationMain {
         System.out.println("2.To Validate the Second Name.");
         System.out.println("3.To Validate Email id");
         System.out.println("4.To Validate Mobile Number");
+        System.out.println("5.To Validate Password");
         System.out.println("Enter the option number to perform the operation");
         int option = scan.nextInt();
         switch(option){
@@ -28,13 +29,18 @@ public class UserRegistrationMain {
                 validate.validateEmail(email);
                 break;
             case 4:
-                System.out.println("Enter the Mob no:. Eg:-91 8602552745");
+                System.out.println("Enter the Mob no:. Eg:-91 9919819801");
                 scan.nextLine();
                 String input = scan.nextLine();
                 validate.validateMobNumber(input);
                 break;
+            case 5:
+                System.out.println("Enter the Password. Note: minimum 8 characters should be given");
+                String password= scan.next();
+                validate.validatePassword(password);
+                break;
             default:
-                System.out.println("Please Enter valid option to validate the pattern");
+                System.out.println("Please Enter valid option to validate the patter");
                 break;
         }
     }

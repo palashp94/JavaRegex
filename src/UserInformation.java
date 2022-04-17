@@ -6,6 +6,7 @@ public class UserInformation {
     private String lastNamePattern;
     private String emailPattern;
     private String mobNumPattern;
+    private String passwordPattern;
 
     public String getFirstNamePattern() {
         return firstNamePattern;
@@ -37,6 +38,14 @@ public class UserInformation {
 
     public void setMobNumPattern(String mobNumPattern) {
         this.mobNumPattern = mobNumPattern;
+    }
+
+    public String getPasswordPattern() {
+        return passwordPattern;
+    }
+
+    public void setPasswordPattern(String passwordPattern) {
+        this.passwordPattern = passwordPattern;
     }
 
     public void validatingInput(String input, String checkPattern, String option){
