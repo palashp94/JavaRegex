@@ -40,7 +40,7 @@ public class UserRegistrationMain {
                 validate.validatePassword(password);
                 break;
             default:
-                System.out.println("Please Enter valid option to validate the patter");
+                System.out.println("Please Enter valid option to validate the pattern");
                 break;
         }
     }

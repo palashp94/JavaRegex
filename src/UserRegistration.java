@@ -1,6 +1,5 @@
 public class UserRegistration {
 
-
     UserInformation storePattern =new UserInformation();
     public void validateFirstName(String firstName){
         storePattern.setFirstNamePattern("^[A-Z]{1}[a-z]{3,}$");
@@ -24,7 +23,7 @@ public class UserRegistration {
         storePattern.validatingInput(number,mobPattern,"Mobile Number");
     }
     public void validatePassword(String password){
-        storePattern.setPasswordPattern("^(?=.{8,})(?=.*[a-z])(?=.*[A-Z]).*$");
+        storePattern.setPasswordPattern("^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$");
         String passPattern= storePattern.getPasswordPattern();
         storePattern.validatingInput(password,passPattern,"Password");
     }
